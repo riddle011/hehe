@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffe4ec; /* sama dengan halaman lain */
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #ffccdd;
+  border-bottom: 2px solid #ff99bb;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.exit-btn {
+  background-color: #fda4b8;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.exit-btn:hover {
+  background-color: #f8739b;
+  transform: translateY(-2px);
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+canvas {
+  border: 3px solid #333;
+  background: #cce6ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 3px solid #ff99bb;
+  border-radius: 12px;
+  padding: 20px;
+  display: none;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.popup h2 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.popup-btn {
+  background-color: #fda4b8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.popup-btn:hover {
+  background-color: #f8739b;
+  transform: translateY(-2px);
+}

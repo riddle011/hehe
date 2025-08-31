@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Game</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">🎮 Mini Game</div>
+    <button onclick="window.location.href='../index.html'" class="exit-btn">Kembali</button>
+  </header>
+
+  <main class="game-container">
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <!-- Popup Menang -->
+    <div id="winPopup" class="popup">
+      <h2>🎉 You Win!</h2>
+      <h4>Congratss kamu hebatt banget</h4>
+      <button onclick="restartGame()" class="popup-btn">Coba Lagi</button>
+      <button onclick="goHome()" class="popup-btn">Kembali</button>
+    </div>
+
+    <!-- Popup Game Over -->
+    <div id="losePopup" class="popup">
+      <h2>💀 Game Over</h2>
+      <h4>walaupun kalah, bagiku kamu tetap menang kok hehe🙂</h4>
+      <button onclick="restartGame()" class="popup-btn">Coba Lagi</button>
+      <button onclick="goHome()" class="popup-btn">Kembali</button>
+    </div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

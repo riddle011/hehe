@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <p>Untuk sementara section ini hanya berisi ilustrasi karena belum mendapat izin pemilik foto</p>
+      <button onclick="closePopup()">Tutup</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Gallery</h1>
+    <p class="subtitle">there is no bad photo when you are in it</p>
+  </header>
+
+  <main class="gallery">
+    <!-- Gambar-gambar akan diisi di sini -->
+    <div class="photo" onclick="openLightbox(this)">
+      <img src="assets/placeholder.png" alt="Foto 1">
+    </div>
+    <div class="photo" onclick="openLightbox(this)">
+      <img src="assets/placeholder.png" alt="Foto 2">
+    </div>
+    <div class="photo" onclick="openLightbox(this)">
+      <img src="assets/placeholder.png" alt="Foto 3">
+    </div>
+    <div class="photo" onclick="openLightbox(this)">
+      <img src="assets/placeholder.png" alt="Foto 4">
+    </div>
+    <div class="photo" onclick="openLightbox(this)">
+      <img src="assets/placeholder.png" alt="Foto 5">
+    </div>
+    <div class="photo" onclick="openLightbox(this)">
+      <img src="assets/placeholder.png" alt="Foto 6">
+    </div>
+    
+    <!-- Duplikat elemen div.photo untuk lebih banyak gambar -->
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+    <button class="back-button" onclick="window.location.href='../index.html'">← Kembali</button>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

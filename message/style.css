@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.cake-stage {
+  position: relative;
+  text-align: center;
+}
+
+.cake {
+  width: 300px;
+}
+
+.candles {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.flame {
+  width: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.instruction {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.letter-stage {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#closedLetter, #openLetter {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+#openLetter {
+  display: none;
+}
+
+.message {
+  display: none;
+  max-width: 500px;
+  background: #fff8e1;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  color: #333;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.message h2 {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cake {
+  position: relative;
+  margin: 250px auto;
+  width: 200px;
+  text-align: center;
+}
+
+.candles {
+  position: absolute;
+  top: -30px; /* naikkan ke atas layer kue */
+  left: 95px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.candle {
+  position: relative;
+  width: 10px;
+  height: 30px;
+  background-color: #ffda77;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.flame {
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #ffecb3 30%, #ffa726 70%);
+  border-radius: 50%;
+  animation: flicker 0.3s infinite alternate;
+}
+
+.layer {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  margin: 2px 0;
+}
+
+.layer-top {
+  background-color: #ffb6b9;
+}
+
+.layer-bottom {
+  background-color: #d46a6a;
+}
+
+.instruction {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+#backHome {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f78fb3;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#backHome:hover {
+  background-color: #e15f96;
+  transform: scale(1.05);
+}
