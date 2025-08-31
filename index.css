@@ -1,0 +1,116 @@
+/* Reset dan latar */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f0;
+  background-image: url('assets/bg-balloons.png'); /* ubah sesuai nama file */
+  background-repeat: repeat;
+  background-size: contain;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #ffffffaa;
+  border-radius: 50%;
+  animation: twinkle 4s infinite ease-in-out;
+}
+
+.star:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.star:nth-child(2) {
+  top: 30%;
+  left: 60%;
+  animation-delay: 1s;
+}
+.star:nth-child(3) {
+  top: 50%;
+  left: 40%;
+  animation-delay: 2s;
+}
+.star:nth-child(4) {
+  top: 70%;
+  left: 80%;
+  animation-delay: 3s;
+}
+.star:nth-child(5) {
+  top: 85%;
+  left: 25%;
+  animation-delay: 1.5s;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+
+/* Container */
+.container {
+  background-color: #fff8e1;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+}
+
+/* Gambar HBD */
+.hbd-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Tombol */
+.button-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: auto;
+  margin-top: 20px;
+}
+
+.gift-button {
+  background-color: #ffb6c1;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gift-button::after {
+  content: "🎀";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.3rem;
+}
+
+.gift-button:hover {
+  transform: scale(1.1);
+}
