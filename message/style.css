@@ -71,6 +71,9 @@ body {
   font-family: 'Georgia', serif;
   color: #333;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+  text-align: left;     
+  line-height: 1.6;
 }
 
 .message h2 {
@@ -152,3 +155,4 @@ body {
   background-color: #e15f96;
   transform: scale(1.05);
 }
+
